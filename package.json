@@ -1,0 +1,12 @@
+{
+  "name": "aeris-blog",
+  "version": "1.0.0",
+  "description": "Aeris Elwin's FFXIV Blog",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o"
+  },
+  "keywords": ["blog", "ffxiv"],
+  "author": "",
+  "license": "ISC"
+}
+

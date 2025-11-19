@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeris Elwin's Blog ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-trail"></div>
+    <div class="sparkles"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title">✨ Aeris Elwin's Blog ✨</h1>
+            <p class="subtitle">Miqo'te Warrior | Excalibur [Primal]</p>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="section active">
+            <div class="welcome-card">
+                <h2>Welcome to My Blog! 💖</h2>
+                <div class="character-info">
+                    <div class="info-item">
+                        <span class="label">Race:</span>
+                        <span class="value">Miqo'te (Keeper of the Moon) ♀</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Guardian:</span>
+                        <span class="value">Rhalgr, the Destroyer</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">City-state:</span>
+                        <span class="value">Gridania</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Grand Company:</span>
+                        <span class="value">Order of the Twin Adder</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Free Company:</span>
+                        <span class="value">Anti-Social Club</span>
+                    </div>
+                </div>
+                <button class="glow-button" onclick="showSection('blog')">Read My Blog! ✨</button>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <h2 class="section-title">📝 My Blog Posts</h2>
+            <div class="blog-container">
+                <article class="blog-post" data-post="1">
+                    <div class="post-header">
+                        <h3>My First Adventure as a Warrior! ⚔️</h3>
+                        <span class="post-date">Posted: 13th Sun of the 6th Astral Moon</span>
+                    </div>
+                    <div class="post-content">
+                        <p>Hey everyone! So I finally decided to pick up the axe and become a Warrior! It's been such a wild journey so far. The training was intense, but I'm loving every moment of it! 💪</p>
+                        <p>Just hit level 63 and got my hands on this amazing Malignant Mogaxe! It's so cool, even if it's a bit... menacing? 😅</p>
+                        <p>Anyway, if you see me out in the field, feel free to say hi! I'm always down for some adventures!</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="like-btn" onclick="likePost(1)">
+                            <span class="heart">💖</span> <span class="like-count">0</span>
+                        </button>
+                        <button class="comment-btn" onclick="toggleComments(1)">💬 Comments</button>
+                    </div>
+                    <div class="comments-section" id="comments-1"></div>
+                </article>
+
+                <article class="blog-post" data-post="2">
+                    <div class="post-header">
+                        <h3>Fashion Show: My New Glamour! 👗✨</h3>
+                        <span class="post-date">Posted: 10th Sun of the 6th Astral Moon</span>
+                    </div>
+                    <div class="post-content">
+                        <p>OMG you guys! I finally put together the PERFECT glamour set! 🎉</p>
+                        <p>I'm rocking the Ravager's set dyed in Soot Black and Charcoal Grey - it's giving me such warrior vibes while still looking cute! The Ravager's Cuirass is absolutely stunning, and I love how it matches with my Ravager's Helm!</p>
+                        <p>Fashion is endgame, am I right? 😎✨</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="like-btn" onclick="likePost(2)">
+                            <span class="heart">💖</span> <span class="like-count">0</span>
+                        </button>
+                        <button class="comment-btn" onclick="toggleComments(2)">💬 Comments</button>
+                    </div>
+                    <div class="comments-section" id="comments-2"></div>
+                </article>
+
+                <article class="blog-post" data-post="3">
+                    <div class="post-header">
+                        <h3>Free Company Shenanigans! 🎊</h3>
+                        <span class="post-date">Posted: 5th Sun of the 6th Astral Moon</span>
+                    </div>
+                    <div class="post-content">
+                        <p>So I joined this Free Company called "Anti-Social Club" and honestly? Best decision ever! 😂</p>
+                        <p>We're all a bunch of introverts who somehow ended up in a group together. It's perfect! We do dungeons together, help each other out, but also respect each other's need for alone time. It's like... the perfect balance?</p>
+                        <p>Last night we did a raid and it was chaos, but fun chaos! Can't wait for our next adventure together!</p>
+                    </div>
+                    <div class="post-footer">
+                        <button class="like-btn" onclick="likePost(3)">
+                            <span class="heart">💖</span> <span class="like-count">0</span>
+                        </button>
+                        <button class="comment-btn" onclick="toggleComments(3)">💬 Comments</button>
+                    </div>
+                    <div class="comments-section" id="comments-3"></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="about-card">
+                <h2>About Me 💫</h2>
+                <div class="about-content">
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-label">Level</div>
+                            <div class="stat-value">63</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Job</div>
+                            <div class="stat-value">Warrior</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">HP</div>
+                            <div class="stat-value">11,340</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">MP</div>
+                            <div class="stat-value">10,000</div>
+                        </div>
+                    </div>
+                    <div class="attributes">
+                        <h3>My Stats 📊</h3>
+                        <div class="attr-list">
+                            <div class="attr-item">Strength: <span>708</span></div>
+                            <div class="attr-item">Vitality: <span>746</span></div>
+                            <div class="attr-item">Critical Hit: <span>490</span></div>
+                            <div class="attr-item">Direct Hit: <span>655</span></div>
+                            <div class="attr-item">Tenacity: <span>521</span></div>
+                        </div>
+                    </div>
+                    <p class="bio">Hey! I'm Aeris, a Miqo'te Warrior from Gridania! I love adventuring, fashion, and hanging out with my Free Company. This blog is where I share my adventures in Eorzea! Feel free to leave comments and say hi! ✨</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2 class="section-title">📸 My Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-placeholder">⚔️ Warrior in Action</div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-placeholder">👗 Glamour Showcase</div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-placeholder">🏰 Gridania Views</div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-placeholder">🎭 Free Company Fun</div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-placeholder">🌙 Moonlit Adventure</div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <div class="gallery-placeholder">✨ Sparkle Magic</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>✨ Aeris Elwin's Blog ✨ | Excalibur [Primal] | Made with 💖 and sparkles</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
